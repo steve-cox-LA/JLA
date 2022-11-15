@@ -1,3 +1,4 @@
 jupyter contrib nbextension install --user
+jupyter nbextension enable latex_envs/latex_envs
 jupyter nbextension install --user --py widgetsnbextension
 jupyter nbextension enable --user --py widgetsnbextension
