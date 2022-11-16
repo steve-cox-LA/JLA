@@ -1,5 +1,7 @@
 jupyter contrib nbextension install --user
 jupyter nbextension enable  --py codefolding/main --user
+jupyter nbextension install --py latex_envs --user
+jupyter nbextension enable latex_envs --user --py
 jupyter nbextension enable  --py latex_envs/latex_envs --user
 jupyter nbextension enable  --py load_tex_macros/main --user
 jupyter nbextension enable --py widgetsnbextension
