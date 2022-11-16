@@ -2,3 +2,4 @@ ipywidgets
 numpy
 matplotlib
 jupyter_contrib_nbextensions
+jupyter_latex_envs
