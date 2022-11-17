@@ -4,6 +4,6 @@
 # ...
 
 # execute run commands
-mv user_envs.json nbextensions/latex_envs
+#  mv user_envs.json nbextensions/latex_envs
 
 exec "$@"
