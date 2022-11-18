@@ -4,7 +4,7 @@ Linear Algebra Text Book
 
 open in classic nb
 
-https://mybinder.org/v2/gh/steve-cox-LA/JLA/main?filepath=01.02-Transformations%20of%20the%20Plane.ipynb
+<a href="https://mybinder.org/v2/gh/steve-cox-LA/JLA/main?filepath=01.02-Transformations%20of%20the%20Plane.ipynb">Chapter 1. Transformations of the Plane</a>
 
 https://mybinder.org/v2/gh/steve-cox-LA/JLA/main?filepath=01.03-Transformations%20of%20Space.ipynb
 
