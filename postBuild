@@ -1,7 +1,7 @@
 jupyter contrib nbextension install --sys-prefix
 jupyter nbextensions_configurator enable --sys-prefix
-jupyter nbextension enable  --py codefolding/main
-jupyter nbextension enable  --py toc2/main 
+jupyter nbextension enable  codefolding/main
+jupyter nbextension enable  toc2/main 
 jupyter nbextension install --py latex_envs --user
 jupyter nbextension enable latex_envs --user --py
 cp user_envs.json /home/jovyan/.local/share/jupyter/nbextensions/latex_envs
