@@ -1,7 +1,7 @@
 # JLA
 Linear Algebra in the Large
 
-<base target="_blank">
+[go](https://www.caam.rice.edu/~cox){:target="_blank" rel="noopener"}
 
 <a href="https://mybinder.org/v2/gh/steve-cox-LA/JLA/main">Jupyter Lab</a>
 
