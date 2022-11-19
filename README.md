@@ -1,5 +1,5 @@
 # JLA
-Linear Algebra in the Large
+<a href="https://www.cmor-faculty.rice.edu/~cox/JLA.html">Rice Site for Linear Algebra in the Large</a>
 
 <a href="https://mybinder.org/v2/gh/steve-cox-LA/JLA/main">Jupyter Lab</a>
 
