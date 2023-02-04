@@ -17,7 +17,7 @@ for line in f:
     if (p == -1):
         # g.write(line)
         newline = line.replace("pmatrix","bmatrix")
-        newline = newline.replace("quad","hskip 0.25in")
+        newline = newline.replace("quad ","hskip 0.25in ")  # careful with quad or \\quad or ...
         newline = newline.replace("qquad","hskip 0.25in")
         g.write(newline)
     else:
