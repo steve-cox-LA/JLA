@@ -3,7 +3,7 @@
 
 import numpy as np
 
-fname = 'cv2a3L'
+fname = 'DynStat2Quant'
 f = open(fname+'.tex', 'r')
 g = open(fname+'EqFix.ipynb', 'w')
 tog = 1
