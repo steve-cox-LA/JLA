@@ -1,38 +1,52 @@
-# convert $$ $$ to \begin and \end equation in python notebook files
-# adding blank lines before and after
+# First run     :source script.vim     on TeX file
+# then run this code to take care of equation environments
 
 import numpy as np
 
-fname = '5. The Fundamental Theorem and Beyond'
-f = open(fname+'.ipynb', 'r')
+fname = 'cv2a3L'
+f = open(fname+'.tex', 'r')
 g = open(fname+'EqFix.ipynb', 'w')
 tog = 1
 eqcnt = 0
+ifblock = 0          # will keep track of whether we are inside an if block
 eqlab = np.zeros(1,)   # will keep track of which equations had label, for 2nd pass
 for line in f:
-    p = line.find('$$')
-    q = line.find('label{eq')
-    if (q != -1):
-        eqlab = np.append(eqlab, eqcnt)
-    if (p == -1):
-        # g.write(line)
-        newline = line.replace("pmatrix","bmatrix")
-        newline = newline.replace("quad ","hskip 0.25in ")  # careful with quad or \\quad or ...
-        newline = newline.replace("qquad","hskip 0.25in")
-        g.write(newline)
-    else:
-        if (tog == 1):
-            g.write(line.replace("$$",""))  # blank line before
-            g.write(line.replace("$$","\\\\begin{equation*}"))
-            eqcnt = eqcnt + 1            
+    #print(line[0:3])
+    #print("ifblock = ",ifblock)
+    if (line[0] != '%'):  # ignore lines that start with % (comments in TeX)
+        if (line[0:3] != '\\if' and ifblock == 0):   # ignore if blocks
+            p = line.find('$$')
+            q = line.find('label{eq')
+            if (q != -1):
+                eqlab = np.append(eqlab, eqcnt)
+            if (p == -1):
+                # g.write(line)
+                newline = line.replace("pmatrix","bmatrix")
+                newline = newline.replace("qquad","hskip 0.25in")
+                newline = newline.replace("quad ","hskip 0.25in ")
+                newline = newline.replace("l{example:","l{fig:")
+                g.write(newline)
+            else:
+                if (tog == 1):
+                    g.write(line.replace("$$",""))  # blank line before
+                    g.write(line.replace("$$","\\begin{equation*}"))
+                    eqcnt = eqcnt + 1            
+                else:
+                    g.write(line.replace("$$","\\end{equation*}"))
+                    g.write(line.replace("$$",""))  # blank line after
+                    # check for last line in cell
+                    #if (line.find(',') > -1):
+                    #   g.write(line.replace("$$",""))  # blank line after
+                tog = -tog
         else:
-            g.write(line.replace("$$","\\\end{equation*}"))
-            # check for last line in cell
-            if (line.find(',') > -1):
-               g.write(line.replace("$$",""))  # blank line after
-        tog = -tog
+            if (line[0:3] == '\\fi'):
+                ifblock = 0
+                # print("flipped")
+            else:
+                ifblock = 1
+                
 
-print(eqlab)
+#print(eqlab)
 f.close()
 g.close()
 
@@ -52,7 +66,7 @@ for line in g:
         if (p != -1):
             eqcnt = eqcnt + 1 
         if (eqcnt in eqlab):
-            print(eqcnt)
+            #print(eqcnt)
             h.write(line.replace("n*}","n}"))
         else:
             h.write(line)
