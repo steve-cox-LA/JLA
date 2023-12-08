@@ -9,8 +9,20 @@
 <a href="https://mybinder.org/v2/gh/steve-cox-LA/JLA/main?filepath=Transformations%20of%20Space.ipynb">Chapter 2. Transformations of Space</a>
 -->
 
+## Part 1. Transformations
+
 <a href="https://github.com/steve-cox-LA/JLA/tree/main/1. Transformations of the Plane">Chapter 1. Transformations of the Plane</a>
 
 <a href="https://github.com/steve-cox-LA/JLA/tree/main/2. Transformations of Space">Chapter 2. Transformations of Space</a>
+
+## Part 2. Linear System of Algebraic Equations
+
+## Part 3. Linear System of Differential Equations
+
+## Part 4. Spectral Theory
+
+## Part 5. Representation Theory
+
+## Part 6. Graph Theory
 
 
