@@ -15,9 +15,9 @@
 
 <a href="https://github.com/steve-cox-LA/JLA/tree/main/2. Transformations of Space">Chapter 2. Transformations of Space</a>
 
-## Part 2. Linear System of Algebraic Equations
+## Part 2. Linear Systems of Algebraic Equations
 
-## Part 3. Linear System of Differential Equations
+## Part 3. Linear Systems of Differential Equations
 
 ## Part 4. Spectral Theory
 
