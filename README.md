@@ -11,7 +11,7 @@
 
 ## Part 1. Transformations
 
-<a href="https://github.com/steve-cox-LA/JLA/tree/main/1. Transformations of the Plane">Chapter 1. Transformations of the Plane</a>
+<a href="https://github.com/steve-cox-LA/JLA/tree/main/1. Transformations of Planes">Chapter 1. Transformations of Planes</a>
 
 <a href="https://github.com/steve-cox-LA/JLA/tree/main/2. Transformations of Space">Chapter 2. Transformations of Space</a>
 
