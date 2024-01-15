@@ -9,6 +9,8 @@
 <a href="https://mybinder.org/v2/gh/steve-cox-LA/JLA/main?filepath=Transformations%20of%20Space.ipynb">Chapter 2. Transformations of Space</a>
 -->
 
+<a href="https://github.com/steve-cox-LA/JLA/tree/main/Setting Up Your Notebook Environment.ipynb"> Setting Up Your Notebook Environment </a>
+
 ## Part 1. Transformations
 
 <a href="https://github.com/steve-cox-LA/JLA/tree/main/1. Transformations of Planes">Chapter 1. Transformations of Planes</a>
